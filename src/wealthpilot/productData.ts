@@ -1,0 +1,60 @@
+import type { WealthWorkspace } from './domain'
+
+const currentMonth = new Date().toLocaleDateString('sv-SE', { year: 'numeric', month: '2-digit' }).slice(0, 7)
+
+export const initialWorkspace: WealthWorkspace = {
+  monthRecord: {
+    month: currentMonth,
+    city: '',
+    employmentStage: 'student',
+    salary: 0,
+    housingFund: 0,
+    allowance: 0,
+    otherIncome: 0,
+    housing: 0,
+    food: 0,
+    transport: 0,
+    learning: 0,
+    otherExpense: 0,
+    confirmed: false,
+  },
+  assets: [
+    { id: 'cash', strategy: 'liquidity', label: '流动现金', value: 0, note: '朝朝宝类 + 活期', tone: '#d9de68' },
+    { id: 'deposit', strategy: 'deposit', label: '定期存款', value: 0, note: '6–24个月阶梯', tone: '#91cda0' },
+    { id: 'index', strategy: 'index', label: '宽基指数', value: 0, note: '长期定投', tone: '#82a9d7' },
+    { id: 'bond', strategy: 'bond', label: '债券基金', value: 0, note: '中短久期', tone: '#b5a0d9' },
+    { id: 'stock', strategy: 'stock', label: '股票', value: 0, note: '小比例持仓', tone: '#dc9d75' },
+    { id: 'housing-fund', strategy: 'housingFund', label: '公积金', value: 0, note: '非现金账户', tone: '#71827c' },
+  ],
+  depositRates: [
+    { bank: '工商银行', short: 'ICBC', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://www.icbc.com.cn/page/1098160857085153280.html' },
+    { bank: '农业银行', short: 'ABC', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://www.abchina.com/zt/PersonalServices/SvcBulletin/202505/t20250519_2445034.htm' },
+    { bank: '中国银行', short: 'BOC', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://www.boc.cn/fimarkets/lilv/fd31/202505/t20250520_25356440.html' },
+    { bank: '建设银行', short: 'CCB', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://www.ccb.com/chn/2025-05/19/article_2025051921024471224.shtml' },
+    { bank: '交通银行', short: 'BOCOM', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://bankcomm.com/BankCommSite/shtml/jyjr/cn/7158/7825/5063992.shtml?channelId=7158' },
+    { bank: '邮储银行', short: 'PSBC', threeMonth: .65, sixMonth: .86, oneYear: .98, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://www.psbc.com/cn/gyyc/zygg/202505/t20250519_331570.html' },
+    { bank: '招商银行', short: 'CMB', threeMonth: .65, sixMonth: .85, oneYear: .95, twoYear: 1.05, threeYear: 1.25, fiveYear: 1.30, effectiveAt: '2025-05-20', retrievedAt: '2026-08-11', sourceUrl: 'https://fin.paas.cmbchina.com/fininfo/interestrate' },
+  ],
+  indices: [
+    { code: '000300.SH', name: '沪深300', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: '000510.CSI', name: '中证A500', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: '000905.SH', name: '中证500', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: '000852.SH', name: '中证1000', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: '399006.SZ', name: '创业板指', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: '000688.SH', name: '科创50', market: 'A股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: 'SPX', name: '标普500', market: '美股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: 'NDX', name: '纳斯达克100', market: '美股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: 'DJI', name: '道琼斯工业指数', market: '美股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+    { code: 'RUT', name: '罗素2000', market: '美股', pe: null, pePercentile: null, pb: null, pbPercentile: null, asOf: null, sourceUrl: null },
+  ],
+  fundProducts: [],
+  purchases: [],
+  bondFunds: [],
+  syncStatus: {
+    depositsAt: '2026-08-11',
+    indicesAt: null,
+    fundsAt: null,
+    fundProductsAt: null,
+    nextRunAt: '每日 07:30',
+  },
+}

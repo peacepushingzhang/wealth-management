@@ -1,0 +1,6 @@
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+python-dotenv>=1,<2
+akshare>=1.17,<2
+# macOS system Python 3.9 is linked to LibreSSL; urllib3 2.x warns and is unsupported there.
+urllib3>=1.26,<2

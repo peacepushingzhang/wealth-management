@@ -1,0 +1,40 @@
+name: Refresh public market snapshot
+
+on:
+  schedule:
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-snapshot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install data dependencies
+        run: pip install -r requirements.txt
+      - name: Refresh and export public data
+        run: python scripts/export_public_snapshot.py --refresh
+      - name: Commit snapshot when changed
+        run: |
+          if git diff --quiet -- public/market-snapshot.json; then
+            echo "Market snapshot is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/market-snapshot.json
+          git commit -m "data: refresh public market snapshot"
+          git push
