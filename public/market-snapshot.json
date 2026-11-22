@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T04:16:12+00:00",
+  "generatedAt": "2026-11-22T03:26:22+00:00",
   "refreshResult": {
     "deposits": {
       "dataset": "deposits",
@@ -8,7 +8,7 @@
       "available": 6,
       "total": 7,
       "reviewRequired": 0,
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22"
     },
     "indices": {
       "status": "blocked",
@@ -22,7 +22,7 @@
       "status": "blocked",
       "message": "所有债券基金同步失败。 519199.OF: akshare: 东方财富开放式基金目录 连续 2 次请求失败：fund_open_fund_daily_em 已在 1.20.41 更名为 fund_open_nav_em，请改用 ak.fund_open_nav_em；参数与返回的列也可能有调整，用 ak.interface_info(\"fund_open_nav_em\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename"
     },
-    "retrievedAt": "2026-11-21T04:16:12+00:00"
+    "retrievedAt": "2026-11-22T03:26:22+00:00"
   },
   "depositRates": [
     {
@@ -35,13 +35,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://www.icbc.com.cn/page/1098160857085153280.html",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://www.icbc.com.cn/page/1098160857085153280.html",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:45+00:00",
+        "retrievedAt": "2026-11-22T03:22:35+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -58,13 +58,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://www.abchina.com/zt/PersonalServices/SvcBulletin/202505/t20250519_2445034.htm",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://www.abchina.com/zt/PersonalServices/SvcBulletin/202505/t20250519_2445034.htm",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:46+00:00",
+        "retrievedAt": "2026-11-22T03:22:36+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -81,13 +81,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://www.boc.cn/fimarkets/lilv/fd31/202505/t20250520_25356440.html",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://www.boc.cn/fimarkets/lilv/fd31/202505/t20250520_25356440.html",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:48+00:00",
+        "retrievedAt": "2026-11-22T03:22:39+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -104,13 +104,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://www.ccb.com/chn/2025-05/19/article_2025051921024471224.shtml",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://www.ccb.com/chn/2025-05/19/article_2025051921024471224.shtml",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:49+00:00",
+        "retrievedAt": "2026-11-22T03:22:41+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -133,7 +133,7 @@
         "provider": "bank_official",
         "sourceUrl": "https://bankcomm.com/BankCommSite/shtml/jyjr/cn/7158/7825/5063992.shtml?channelId=7158",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:53+00:00",
+        "retrievedAt": "2026-11-22T03:22:42+00:00",
         "freshness": "missing",
         "fallbackUsed": false,
         "status": "unavailable",
@@ -150,13 +150,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://www.psbc.com/cn/gyyc/zygg/202505/t20250519_331570.html",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://www.psbc.com/cn/gyyc/zygg/202505/t20250519_331570.html",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:54+00:00",
+        "retrievedAt": "2026-11-22T03:22:43+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -173,13 +173,13 @@
       "threeYear": 1.25,
       "fiveYear": 1.3,
       "effectiveAt": "2025-05-20",
-      "retrievedAt": "2026-11-21",
+      "retrievedAt": "2026-11-22",
       "sourceUrl": "https://fin.paas.cmbchina.com/fininfo/interestrate",
       "evidence": {
         "provider": "bank_official",
         "sourceUrl": "https://fin.paas.cmbchina.com/fininfo/interestrate",
         "asOf": "2025-05-20",
-        "retrievedAt": "2026-11-21T04:11:55+00:00",
+        "retrievedAt": "2026-11-22T03:22:44+00:00",
         "freshness": "fresh",
         "fallbackUsed": false,
         "status": "source_verified",
@@ -223,7 +223,7 @@
         "provider": null,
         "sourceUrl": null,
         "asOf": null,
-        "retrievedAt": "2026-11-21T04:12:01+00:00",
+        "retrievedAt": "2026-11-22T03:22:49+00:00",
         "freshness": "missing",
         "fallbackUsed": false,
         "status": "blocked",
@@ -286,7 +286,7 @@
         "provider": null,
         "sourceUrl": null,
         "asOf": null,
-        "retrievedAt": "2026-11-21T04:12:10+00:00",
+        "retrievedAt": "2026-11-22T03:22:58+00:00",
         "freshness": "missing",
         "fallbackUsed": false,
         "status": "blocked",
@@ -307,7 +307,7 @@
         "provider": null,
         "sourceUrl": null,
         "asOf": null,
-        "retrievedAt": "2026-11-21T04:12:10+00:00",
+        "retrievedAt": "2026-11-22T03:22:58+00:00",
         "freshness": "missing",
         "fallbackUsed": false,
         "status": "blocked",
@@ -1229,7 +1229,7 @@
     }
   ],
   "syncStatus": {
-    "depositsAt": "2026-11-21",
+    "depositsAt": "2026-11-22",
     "indicesAt": "2026-11-13",
     "fundsAt": "2026-11-12",
     "fundProductsAt": "2026-11-20",
